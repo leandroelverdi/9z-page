@@ -1,12 +1,10 @@
 /* Google font Cinzel Decorative */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
 
-
-:root, [data-bs-theme=dark] {
-  --bs-gradient: linear-gradient(160deg, rgba(105,0,182,0.7035189075630253) 0%, rgba(194,29,253,0.6951155462184874) 40%, rgba(248,87,131,1) 100%);
+:root,
+[data-bs-theme="dark"] {
+  --bs-gradient: 
 }
-
-
 
 /* Estilos navbar */
 .bg {
@@ -104,10 +102,19 @@
   height: 300px;
 }
 
-.bg-purple {
-  background: rgb(105, 0, 182);
+.bg-custom {
+  background:  linear-gradient(
+    160deg,
+    rgba(105, 0, 182, 0.7035189075630253) 0%,
+    rgba(194, 29, 253, 0.6951155462184874) 40%,
+    rgba(248, 87, 131, 1) 100%
+  );
 }
 
+.card:hover {
+  transform: translate(-10px, 0);
+  transition: transform ease-in-out .3s;
+}
 
 /* Estilos del footer */
 
