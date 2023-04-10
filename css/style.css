@@ -1,0 +1,141 @@
+/* Google font Cinzel Decorative */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+
+
+:root, [data-bs-theme=dark] {
+  --bs-gradient: linear-gradient(160deg, rgba(105,0,182,0.7035189075630253) 0%, rgba(194,29,253,0.6951155462184874) 40%, rgba(248,87,131,1) 100%);
+}
+
+
+
+/* Estilos navbar */
+.bg {
+  background-color: #000000aa;
+}
+
+.logo {
+  width: 60px;
+}
+
+.nav-item {
+  font-size: 16px;
+  margin-left: 5px;
+  padding: 0 5px;
+  font-weight: 700;
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.nav-item:hover {
+  outline: 2px solid #fff;
+  border-radius: 10px;
+}
+
+/* Estilos index */
+
+.hero-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-border {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  object-fit: contain;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  align-content: center;
+  grid-template-areas:
+    "area-6 area-6"
+    "area-5 area-4"
+    "area-5 area-1"
+    "area-3 area-2";
+  gap: 15px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.area-1 {
+  grid-area: area-1;
+}
+
+.area-2 {
+  grid-area: area-2;
+}
+
+.area-3 {
+  grid-area: area-3;
+}
+
+.area-4 {
+  grid-area: area-4;
+}
+
+.area-5 {
+  grid-area: area-5;
+}
+
+.area-6 {
+  grid-area: area-6;
+}
+
+/* Estilos Roster */
+
+.picture {
+  width: 300px;
+  height: 300px;
+}
+
+.bg-purple {
+  background: rgb(105, 0, 182);
+}
+
+
+/* Estilos del footer */
+
+.icon img {
+  width: 40px;
+  margin: 0 15px;
+}
+
+.copyright {
+  padding: 20px 0;
+  border-top: 1px solid #fff;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Estilos generales */
+.gap {
+  margin-top: 80px;
+}
+
+/* Media queries para index */
+@media screen and (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "area-5 area-6 area-6"
+      "area-5 area-1 area-2"
+      "area-3 area-3 area-4";
+  }
+}
