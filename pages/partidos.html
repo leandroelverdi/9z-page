@@ -27,43 +27,61 @@
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarOffcanvasLg"
+            aria-controls="navbarOffcanvasLg"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../index.html"
-                  >INICIO</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="../pages/roster.html"
-                  >ROSTER</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="../pages/vlogs.html">VLOGS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="../pages/partidos.html"
-                  >PARTIDOS</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="../pages/sobre-nosotros.html"
-                  >Sobre Nosotros</a
-                >
-              </li>
-            </ul>
+          <div
+            class="offcanvas offcanvas-end bg-black bg-opacity-75"
+            tabindex="-1"
+            id="navbarOffcanvasLg"
+            aria-labelledby="navbarOffcanvasLgLabel"
+          >
+            <div class="offcanvas-header">
+              <img class="logo" src="../multimedia/logo.png" alt="logo-9z" />
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
+                    >INICIO</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../pages/roster.html"
+                    >ROSTER</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../pages/vlogs.html"
+                    >VLOGS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../pages/partidos.html"
+                    >PARTIDOS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../pages/sobre-nosotros.html"
+                    >Sobre Nosotros</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
