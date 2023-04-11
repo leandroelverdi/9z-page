@@ -48,14 +48,16 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
   align-content: center;
   grid-template-areas:
-    "area-6 area-6"
-    "area-5 area-4"
-    "area-5 area-1"
-    "area-3 area-2";
+    "area-6"
+    "area-5"
+    "area-4"
+    "area-1"
+    "area-3"
+    "area-2";
   gap: 15px;
 }
 
@@ -100,15 +102,69 @@
 .bg-custom {
   background:  linear-gradient(
     160deg,
-    rgba(105, 0, 182, 0.7035189075630253) 0%,
+    rgba(105, 0, 182, 0.706) 0%,
     rgba(194, 29, 253, 0.6951155462184874) 40%,
     rgba(248, 87, 131, 1) 100%
   );
 }
 
-.card-custom:hover {
-  transform: translate(-30px, 0) scale(105%);
-  transition: transform ease-in-out .3s;
+/* Estilos Contactos */
+
+.picture-contact {
+  width: 20em;
+  height: auto;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.input::placeholder {
+  color: #FFF;
+}
+
+
+.input-text-area {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  padding: 5px;
+  border: 1px solid black;
+  resize: none;
+  font-size: 16px;
+  height: 200px;
+}
+
+.input-text-area::placeholder {
+  color: #FFF;
+}
+
+.form {
+  width: 100%;
+}
+
+.input-submit {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 6px 0;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.input-submit:hover {
+  background-color: #FFFFFF66;
 }
 
 /* Estilos Sobre-Nosotros */
@@ -137,7 +193,12 @@
   margin-top: 80px;
 }
 
-/* Media queries para index */
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+
+/* Media queries */
 @media screen and (min-width: 992px) {
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
@@ -146,6 +207,19 @@
       "area-5 area-6 area-6"
       "area-5 area-1 area-2"
       "area-3 area-3 area-4";
+  }
+
+  .card-custom:hover {
+    transform: translate(-30px, 0) scale(105%);
+    transition: transform ease-in-out .3s;
+  }
+
+  .form {
+    width: 65%;
+  }
+
+  .input-submit {
+    width: 20%;
   }
 
 }
