@@ -1,13 +1,17 @@
 /* Google font Cinzel Decorative */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
 
+/* Google font Noto Sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+
 /* Estilos navbar */
 .bg {
   background-color: #000000aa;
 }
 
 .logo {
-  width: 60px;
+  width: 2.5em;
 }
 
 .nav-item {
@@ -35,7 +39,7 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -43,6 +47,7 @@
   width: 100%;
   height: auto;
   position: absolute;
+  bottom: -1px;
   object-fit: contain;
 }
 
@@ -95,12 +100,12 @@
 /* Estilos Roster */
 
 .picture {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 15em;
 }
 
 .bg-custom {
-  background:  linear-gradient(
+  background: linear-gradient(
     160deg,
     rgba(105, 0, 182, 0.706) 0%,
     rgba(194, 29, 253, 0.6951155462184874) 40%,
@@ -108,10 +113,18 @@
   );
 }
 
+/* Estilos Noticias */
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
 /* Estilos Contactos */
 
 .picture-contact {
-  width: 20em;
+  width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 25px;
@@ -128,10 +141,13 @@
   font-size: 16px;
 }
 
-.input::placeholder {
-  color: #FFF;
+.input:focus {
+  border-bottom: 2px solid #FFF;
 }
 
+.input::placeholder {
+  color: #fff;
+}
 
 .input-text-area {
   display: block;
@@ -140,13 +156,18 @@
   outline: none;
   padding: 5px;
   border: 1px solid black;
+  border-radius: 10px;
   resize: none;
   font-size: 16px;
   height: 200px;
 }
 
+.input-text-area:focus {
+  border: 2px solid #FFF;
+}
+
 .input-text-area::placeholder {
-  color: #FFF;
+  color: #fff;
 }
 
 .form {
@@ -164,14 +185,18 @@
 }
 
 .input-submit:hover {
-  background-color: #FFFFFF66;
+  background-color: #ffffff66;
 }
 
 /* Estilos Sobre-Nosotros */
 
 .picture-large {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
+}
+
+.form-sobre-nosotros {
+  width: 100%;
 }
 
 /* Estilos del footer */
@@ -190,13 +215,16 @@
 
 /* Estilos generales */
 .gap {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .mb-6 {
   margin-bottom: 6rem;
 }
 
+.title {
+  font-family: 'Noto Sans JP', sans-serif;
+}
 
 /* Media queries */
 @media screen and (min-width: 992px) {
@@ -211,7 +239,7 @@
 
   .card-custom:hover {
     transform: translate(-30px, 0) scale(105%);
-    transition: transform ease-in-out .3s;
+    transition: transform ease-in-out 0.3s;
   }
 
   .form {
@@ -222,4 +250,16 @@
     width: 20%;
   }
 
+  .picture-contact {
+    width: 18em;
+  }
+
+  .picture-large {
+    width: 20em;
+  }
+
+  .picture {
+    width: 18em;
+    height: 18em;
+  }
 }
