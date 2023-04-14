@@ -1,0 +1,64 @@
+.image-contact {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 25px;
+}  
+
+.form {
+  width: 100%;
+
+  .input {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+
+    &::placeholder {
+      color: #fff;
+    }
+
+    &:focus {
+      border-bottom: 2px solid #fff;
+    }
+  }
+
+  .input-text-area {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    resize: none;
+    font-size: 16px;
+    height: 200px;
+
+    &::placeholder {
+      color: #fff;
+    }
+
+    &:focus {
+      border: 2px solid #fff;
+    }
+  }
+
+  .input-submit {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 6px 0;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+
+    &:hover {
+      background-color: #ffffff66;
+    }
+  }
+}
