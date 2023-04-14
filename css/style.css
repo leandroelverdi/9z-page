@@ -1,6 +1,4 @@
-/* Google font Cinzel Decorative */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
-/* Google font Noto Sans */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 .navbar {
   background-color: rgba(0, 0, 0, 0.8);
@@ -211,15 +209,6 @@
     overflow-y: auto;
   }
 }
-/* Estilos generales */
-.gap {
-  margin-top: 100px;
-}
-
-.mb-6 {
-  margin-bottom: 6rem;
-}
-
 .title {
   font-family: "Noto Sans JP", sans-serif;
 }
