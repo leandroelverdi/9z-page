@@ -107,16 +107,16 @@
   width: 100%;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
   outline: none;
   padding: 5px;
   font-size: 16px;
 }
 .form .input::placeholder {
-  color: #fff;
+  color: #FFFFFF;
 }
 .form .input:focus {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #FFFFFF;
 }
 .form .input-text-area {
   display: block;
@@ -124,21 +124,21 @@
   background-color: transparent;
   outline: none;
   padding: 5px;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 10px;
   resize: none;
   font-size: 16px;
   height: 200px;
 }
 .form .input-text-area::placeholder {
-  color: #fff;
+  color: #FFFFFF;
 }
 .form .input-text-area:focus {
-  border: 2px solid #fff;
+  border: 2px solid #FFFFFF;
 }
 .form .input-submit {
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 5px;
   padding: 6px 0;
   font-size: 18px;
@@ -159,21 +159,21 @@
   width: 100%;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
   outline: none;
   padding: 5px;
   font-size: 16px;
 }
 .input::placeholder {
-  color: #fff;
+  color: #FFFFFF;
 }
 .input:focus {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #FFFFFF;
 }
 
 .input-submit {
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 5px;
   padding: 6px 0;
   font-size: 18px;

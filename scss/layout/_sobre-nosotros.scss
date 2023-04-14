@@ -8,23 +8,23 @@
   width: 100%;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $black;
   outline: none;
   padding: 5px;
   font-size: 16px;
 
   &::placeholder {
-    color: #fff;
+    color: $white;
   }
 
   &:focus {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid $white;
   }
 }
 
 .input-submit {
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid $black;
   border-radius: 5px;
   padding: 6px 0;
   font-size: 18px;
@@ -32,6 +32,6 @@
   width: 100%;
 
   &:hover {
-    background-color: #ffffff66;
+    background-color: $grey-light;
   }
 }
