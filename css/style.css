@@ -4,7 +4,8 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 .navbar .logo {
-  width: 2.5em;
+  width: 69px;
+  height: 64px;
 }
 .navbar .nav-item {
   font-size: 16px;
@@ -22,7 +23,8 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 .footer .icon {
-  width: 40px;
+  width: 2.5em;
+  height: 2.5em;
   margin: 0 15px;
 }
 .footer .copyright {
@@ -33,10 +35,9 @@
 }
 
 .hero {
-  width: 100%;
+  width: 50%;
   height: 100vh;
   object-fit: cover;
-  background-position: center;
 }
 
 .grid-container {
@@ -187,6 +188,11 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "area-5 area-6 area-6" "area-5 area-1 area-2" "area-3 area-3 area-4";
+  }
+  .hero {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
   }
   .image-contact {
     width: 18em;
