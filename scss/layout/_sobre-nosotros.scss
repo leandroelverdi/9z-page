@@ -1,37 +1,43 @@
 .image-about-me {
   width: 100%;
-  object-fit: cover;
+  height: 100%;
 }
 
 .input {
-  display: block;
-  width: 100%;
+  @include text($white, 18px);
   background-color: transparent;
-  border: none;
-  border-bottom: 1px solid $black;
-  outline: none;
-  padding: 5px;
-  font-size: 16px;
+  padding-left: 5px;
+  width: 100%;
 
   &::placeholder {
     color: $white;
   }
 
   &:focus {
-    border-bottom: 2px solid $white;
+    outline: none
   }
 }
 
 .input-submit {
+  @include text($white, 18px);
+  margin-top: 16px;
   background-color: transparent;
-  border: 1px solid $black;
-  border-radius: 5px;
-  padding: 6px 0;
-  font-size: 18px;
-  font-weight: 500;
-  width: 100%;
-
-  &:hover {
-    background-color: $grey-light;
-  }
+  text-align: center;
 }
+
+
+
+
+// .input-submit {
+//   background-color: transparent;
+//   border: 1px solid $black;
+//   border-radius: 5px;
+//   padding: 6px 0;
+//   font-size: 18px;
+//   font-weight: 500;
+//   width: 100%;
+
+//   &:hover {
+//     background-color: $grey-light;
+//   }
+// }

@@ -1,64 +1,54 @@
-.image-contact {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 25px;
-}  
-
 .form {
-  width: 100%;
+  @include flex(space-between, center, column);
 
-  .input {
-    display: block;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid $black;
-    outline: none;
-    padding: 5px;
-    font-size: 16px;
-
-    &::placeholder {
-      color: $white;
-    }
-
-    &:focus {
-      border-bottom: 2px solid $white;
-    }
+  .image-contact {
+    @include sizing(10em, 100%);
+    border-radius: 16px;
   }
 
-  .input-text-area {
-    display: block;
-    width: 100%;
-    background-color: transparent;
-    outline: none;
-    padding: 5px;
-    border: 1px solid $black;
-    border-radius: 10px;
-    resize: none;
-    font-size: 16px;
-    height: 200px;
+  .container-contact {
+    @include flex(space-between, center, column);
+    @include sizing(100%, 100%);
 
-    &::placeholder {
-      color: $white;
+    .text {
+      @include text($white, 24px, center);
+      margin: 2.5em 0;
     }
 
-    &:focus {
-      border: 2px solid $white;
-    }
-  }
+    .form-inputs {
+      width: 100%;
 
-  .input-submit {
-    background-color: transparent;
-    border: 1px solid $black;
-    border-radius: 5px;
-    padding: 6px 0;
-    font-size: 18px;
-    font-weight: 500;
-    width: 100%;
+      .input-contact {
+        @extend .input;
+        border: none;
+        margin-bottom: 16px;
+        border-bottom: 1px solid $white;
+      }
 
-    &:hover {
-      background-color: $grey-light;
+      .input-text-area {
+        @include sizing(100%, 200px);
+        @extend .input;
+        border: 1px solid $white;
+        border-radius: 6px;
+      }
+
+      .container-input-submit {
+        @include flex(flex-end, center);
+
+        .input-submit-contact {
+          @include sizing(100%, 2.4em);
+          @extend .input-submit;
+          margin: 20px 0;
+          border-radius: 6px;
+          border: 1px solid $white;
+
+          &:hover {
+            color: $white;
+            background-color: $black;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }

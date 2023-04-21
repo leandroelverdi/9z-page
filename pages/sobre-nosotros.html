@@ -5,6 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Pagina no oficial de 9z team" />
+    <meta
+      name="description"
+      content="Pagina informativa, en esta pagina se van a actualizar una vez al mes las noticias acerca del equipo de Esports 9z team."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://github.com/leandroelverdi/PreEntrega2-Elverdi-52140"
+    />
+    <meta property="og:title" content="Pagina no oficial de 9z team" />
+    <meta
+      property="og:description"
+      content="Pagina informativa, en esta pagina se van a actualizar una vez al mes las noticias acerca del equipo de Esports 9z team."
+    />
+    <meta
+      property="og:image"
+      content="https://opengraph.githubassets.com/966b2d2b18b6cb1d4dd0370ad545cbf6a88a410dc401435e84bf7e86fc5ef065/leandroelverdi/PreEntrega2-Elverdi-52140"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://github.com/leandroelverdi/PreEntrega2-Elverdi-52140"
+    />
+    <meta property="twitter:title" content="Pagina no oficial de 9z team" />
+    <meta
+      property="twitter:description"
+      content="Pagina informativa, en esta pagina se van a actualizar una vez al mes las noticias acerca del equipo de Esports 9z team."
+    />
+    <meta
+      property="twitter:image"
+      content="https://opengraph.githubassets.com/966b2d2b18b6cb1d4dd0370ad545cbf6a88a410dc401435e84bf7e86fc5ef065/leandroelverdi/PreEntrega2-Elverdi-52140"
+    />
+
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="../css/style.css" />
 
@@ -15,14 +54,20 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
-    <title>Sobre nosotros</title>
+    <link
+      rel="shortcut icon"
+      href="multimedia/favicon.webp"
+      type="image/x-icon"
+    />
+
+    <title>9z team</title>
   </head>
-  <body class="bg-custom" data-bs-theme="dark">
+  <body class="bg-custom body" data-bs-theme="dark">
     <header>
       <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html"
-            ><img class="logo" src="../multimedia/logo.png" alt="logo-9z"
+            ><img class="logo" src="../multimedia/logo.svg" alt="logo-9z"
           /></a>
           <button
             class="navbar-toggler"
@@ -41,7 +86,7 @@
             aria-labelledby="navbarOffcanvasLgLabel"
           >
             <div class="offcanvas-header">
-              <img class="logo" src="../multimedia/logo.png" alt="logo-9z" />
+              <img class="logo" src="../multimedia/logo.svg" alt="logo-9z" />
               <button
                 type="button"
                 class="btn-close"
@@ -98,7 +143,7 @@
           <div class="d-flex flex-column align-items-center">
             <img
               class="image-about-me"
-              src="../multimedia/frankaster.png"
+              src="../multimedia/frankaster.svg"
               alt="Frankaster"
             />
             <h2 class="h3 text-center text-light">Frankaster</h2>
@@ -124,41 +169,29 @@
           <h2 class="text-light">
             Suscribite para enterarte de todos los resultados de los partidos
           </h2>
-          <form action="" class="w-100 mt-5">
-            <div class="mb-4">
+          <form>
               <input type="text" class="input" placeholder="Correo:" />
-            </div>
-            <div class="mb-4 d-flex justify-content-end">
-              <input type="submit" value="Enviar" class="input-submit">
-            </div>
+              <input type="submit" value="Enviar" class="input-submit" />
           </form>
         </div>
       </section>
     </main>
 
-    <footer class="footer text-white position-relative">
-      <div class="container py-4">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Voluptatibus, ex dolor enim illum id ea ullam cum sunt alias corporis
-          quas ratione iusto error provident qui dolorum tempore magnam? Veniam
-          numquam quibusdam eius nobis aspernatur! Tenetur commodi porro veniam
-          eius quis nihil quod tempore qui, autem iusto repudiandae, tempora
-          accusantium.
-        </p>
-        <div class="d-flex justify-content-center">
-          <a href="" 
-            ><img src="../multimedia/youtube.png" alt="youtube-icon" class="icon"
-          /></a>
-          <a href="" 
-            ><img src="../multimedia/gorjeo.png" alt="twitter-icon" class="icon"
-          /></a>
-          <a href=""
-            ><img src="../multimedia/instagram.png" alt="instagram-icon" class="icon"
-          /></a>
-        </div>
+    <footer class="footer">
+      <p class="copyright">© 9z team Club de Esports</p>
+      <div class="container-icons">
+        <a href="https://www.youtube.com/@9zTeam" aria-label="Youtube"
+          ><i class="fa-brands fa-youtube icon"></i
+        ></a>
+
+        <a href="https://twitter.com/9zTeam" aria-label="Twitter"
+          ><i class="fa-brands fa-twitter icon"></i
+        ></a>
+
+        <a href="https://www.instagram.com/9zteam" aria-label="Instagram">
+          <i class="fa-brands fa-instagram icon"></i
+        ></a>
       </div>
-      <p class="copyright">© 9z team</p>
     </footer>
 
     <!-- Scripts Bootstrap -->
@@ -167,5 +200,8 @@
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Font Awesome -->
+    <script src="../fontawesome/js/all.min.js"></script>
   </body>
 </html>

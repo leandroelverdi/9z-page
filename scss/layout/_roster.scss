@@ -2,7 +2,10 @@
   @include gradient;
   
   .roster-image {
-    width: 100%;
-    height: 15em;
+    @include sizing(100%, 240px);
+  }
+
+  .order{
+    order: 1;
   }
 }
