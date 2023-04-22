@@ -8,11 +8,11 @@
       "area-5 area-1 area-2"
       "area-3 area-3 area-4";
   }
-  
-    .hero {
-      @include sizing(100%, 100vh);
-      object-fit: cover;
-    }
+
+  .hero {
+    @include sizing(100%, 100vh);
+    object-fit: cover;
+  }
 
   //Estilos para Roster
 
@@ -26,7 +26,6 @@
       @include sizing(320px, 180px);
       margin-right: 0.5em;
     }
-
   }
 
   // Estilos para Contacto
@@ -48,8 +47,19 @@
 
   // Estilos para sobre nosotros
   .image-about-me {
-    width: 18em;
-    height: 100%;
+    @include sizing(16em, 100%);
+  }
+
+  .form-about {
+    @include flex(space-around, center);
+
+    .input-about {
+      width: 50%;
+    }
+
+    .container-submit-about {
+      @include sizing(15%, auto);
+    }
   }
 
   // Estilos footer

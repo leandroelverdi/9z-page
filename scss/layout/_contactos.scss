@@ -2,7 +2,7 @@
   @include flex(space-between, center, column);
 
   .image-contact {
-    @include sizing(10em, 100%);
+    @include sizing(14em, 100%);
     border-radius: 16px;
   }
 
@@ -36,8 +36,9 @@
         @include flex(flex-end, center);
 
         .input-submit-contact {
-          @include sizing(100%, 2.4em);
+          @include sizing(100%);
           @extend .input-submit;
+          padding: 10px 0;
           margin: 20px 0;
           border-radius: 6px;
           border: 1px solid $white;

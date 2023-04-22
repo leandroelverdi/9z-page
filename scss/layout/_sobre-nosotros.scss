@@ -1,6 +1,5 @@
 .image-about-me {
-  width: 100%;
-  height: 100%;
+  @include sizing(14em, 100%);
 }
 
 .input {
@@ -20,23 +19,23 @@
 
 .input-submit {
   @include text($white, 18px);
-  margin-top: 16px;
   background-color: transparent;
+  margin-top: 16px;
   text-align: center;
 }
 
 .section-suscribers {
   @include flex(center, center, column);
-  height: 500px;
-  // background-color: $pink;
+  @include sizing(100%, 500px);
 
   .text-about {
     @include text($white, 1.8em, center);
   }
 
   .form-about {
-    @include sizing(100%, auto);
-    @include flex(center, center, column);
+    @include sizing(100%, 150px);
+    @include flex(space-around, center, column);
+    margin-top: 60px;
 
     .input-about {
       @extend .input;
@@ -46,12 +45,12 @@
     }
 
     .container-submit-about {
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
+      @include sizing(100%);
+
       .submit-about {
         @extend .input-submit;
-        @include sizing(25%, auto);
+        @include sizing(100%);
+        padding: 10px 0;
         border-radius: 6px;
         border: 1px solid $white;
 

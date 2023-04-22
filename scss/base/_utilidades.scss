@@ -8,7 +8,7 @@
   );  
 }
 
-@mixin sizing($w, $h) {
+@mixin sizing($w, $h: auto) {
   width: $w;
   height: $h;
 }
