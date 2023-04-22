@@ -14,7 +14,7 @@
   }
 
   &:focus {
-    outline: none
+    outline: none;
   }
 }
 
@@ -25,19 +25,40 @@
   text-align: center;
 }
 
+.section-suscribers {
+  @include flex(center, center, column);
+  height: 500px;
+  // background-color: $pink;
 
+  .text-about {
+    @include text($white, 1.8em, center);
+  }
 
+  .form-about {
+    @include sizing(100%, auto);
+    @include flex(center, center, column);
 
-// .input-submit {
-//   background-color: transparent;
-//   border: 1px solid $black;
-//   border-radius: 5px;
-//   padding: 6px 0;
-//   font-size: 18px;
-//   font-weight: 500;
-//   width: 100%;
+    .input-about {
+      @extend .input;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $white;
+    }
 
-//   &:hover {
-//     background-color: $grey-light;
-//   }
-// }
+    .container-submit-about {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      .submit-about {
+        @extend .input-submit;
+        @include sizing(25%, auto);
+        border-radius: 6px;
+        border: 1px solid $white;
+
+        &:hover {
+          background-color: $black;
+        }
+      }
+    }
+  }
+}

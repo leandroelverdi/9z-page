@@ -1,8 +1,9 @@
 .footer {
   @include flex(space-between, center, column);
-  @include sizing(100%, 80px);
+  @include sizing(100%, 90px);
   background-color: $bg-dark;
   align-self: flex-end;
+  padding: 16px 0;
 
   .container-icons {
     @include sizing(18%, 100%);
@@ -16,6 +17,7 @@
 
   .copyright {
     @include text($white, 18px);
+    padding-bottom: 8px;
     margin: 0;
   }
 }
