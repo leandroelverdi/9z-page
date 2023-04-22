@@ -293,7 +293,7 @@
   }
   .image-about-me {
     width: 18em;
-    height: auto;
+    height: 100%;
   }
   .footer {
     padding: 0 14%;
