@@ -294,20 +294,20 @@
     max-width: 75%;
     margin-left: 2em;
   }
-  .image-about-me {
+  .section-suscribers .image-about-me {
     width: 16em;
     height: 100%;
   }
-  .form-about {
+  .section-suscribers .form-about {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
-  .form-about .input-about {
+  .section-suscribers .form-about .input-about {
     width: 50%;
   }
-  .form-about .container-submit-about {
+  .section-suscribers .form-about .container-submit-about {
     width: 15%;
     height: auto;
   }

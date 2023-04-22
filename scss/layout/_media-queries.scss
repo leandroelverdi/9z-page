@@ -46,22 +46,24 @@
   }
 
   // Estilos para sobre nosotros
-  .image-about-me {
-    @include sizing(16em, 100%);
-  }
 
-  .form-about {
-    @include flex(space-around, center);
-
-    .input-about {
-      width: 50%;
+  .section-suscribers {
+    .image-about-me {
+      @include sizing(16em, 100%);
     }
 
-    .container-submit-about {
-      @include sizing(15%, auto);
+    .form-about {
+      @include flex(space-around, center);
+
+      .input-about {
+        width: 50%;
+      }
+
+      .container-submit-about {
+        @include sizing(15%);
+      }
     }
   }
-
   // Estilos footer
   .footer {
     padding: 0 14%;
