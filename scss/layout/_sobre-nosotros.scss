@@ -2,6 +2,10 @@
   @include sizing(14em, 100%);
 }
 
+.text-about-me {
+  font-size: 1em;
+}
+
 .input {
   @include text($white, 18px);
   background-color: transparent;

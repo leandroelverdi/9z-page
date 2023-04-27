@@ -1,11 +1,46 @@
 .bg-custom {
   @include gradient;
-  
-  .roster-image {
-    @include sizing(100%, 240px);
-  }
+}
 
-  .order{
-    order: 1;
+.card-section {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .card-custom {
+    display: flex;
+
+    .card-custom-header {
+      display: flex;
+      @include sizing(100%);
+      justify-content: space-between;
+    }
+
+    .card-custom-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include sizing(100%, 150px);
+
+
+      .card-custom-logo {
+        @include sizing(64px) 
+      }
+    }
+    .card-custom-image {
+      display: flex;
+
+      .flag {
+        @include sizing(36px, 19px);
+      }
+    }
+
+    .card-custom-image-logo {
+      @include sizing(26px);
+    }
+
+    .roster-image {
+      @include sizing(200px, 220px);
+      object-fit: cover;
+    }
   }
 }
