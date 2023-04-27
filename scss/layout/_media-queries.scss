@@ -16,6 +16,23 @@
 
   //Estilos para Roster
 
+  .card-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    .card-custom {
+      display: flex;
+
+      .card-custom-header {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+
   // Estilos para Noticias
   .card-custom {
     @include flex(space-between, center, row);
@@ -46,19 +63,22 @@
   }
 
   // Estilos para sobre nosotros
-  .image-about-me {
-    @include sizing(16em, 100%);
-  }
 
-  .form-about {
-    @include flex(space-around, center);
-
-    .input-about {
-      width: 50%;
+  .section-suscribers {
+    .image-about-me {
+      @include sizing(16em, 100%);
     }
 
-    .container-submit-about {
-      @include sizing(15%, auto);
+    .form-about {
+      @include flex(space-around, center);
+
+      .input-about {
+        width: 50%;
+      }
+
+      .container-submit-about {
+        @include sizing(15%);
+      }
     }
   }
 
