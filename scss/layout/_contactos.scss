@@ -30,6 +30,7 @@
         @extend .input;
         border: 1px solid $white;
         border-radius: 6px;
+        resize: none
       }
 
       .container-input-submit {

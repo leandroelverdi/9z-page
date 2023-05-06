@@ -65,6 +65,10 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link
       rel="shortcut icon"
       href="../multimedia/favicon.png"
@@ -78,7 +82,10 @@
       <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html"
-            ><img class="logo" src="../multimedia/logo.svg" alt="logo representativo del equipo 9z team"
+            ><img
+              class="logo"
+              src="../multimedia/logo.svg"
+              alt="logo representativo del equipo 9z team"
           /></a>
           <button
             class="navbar-toggler"
@@ -97,7 +104,11 @@
             aria-labelledby="navbarOffcanvasLgLabel"
           >
             <div class="offcanvas-header">
-              <img class="logo" src="../multimedia/logo.svg" alt="logo representativo del equipo 9z team" />
+              <img
+                class="logo"
+                src="../multimedia/logo.svg"
+                alt="logo representativo del equipo 9z team"
+              />
               <button
                 type="button"
                 class="btn-close"
@@ -149,6 +160,7 @@
 
       <section>
         <div
+          data-aos="zoom-in-up"
           class="container d-flex flex-column flex-lg-row-reverse align-items-center"
         >
           <div class="d-flex flex-column align-items-center">
@@ -170,7 +182,8 @@
               organización competitiva y profesional que pudiera competir a
               nivel internacional en varios juegos populares, como
               Counter-Strike: Global Offensive, Fortnite, Rainbow Six Siege y
-              más. <br /> <br />
+              más. <br />
+              <br />
               Hoy en día, 9z Team cuenta con varios equipos de deportes
               electrónicos que compiten en torneos de todo el mundo, incluidos
               equipos de Counter-Strike: Global Offensive, Rainbow Six Siege y
@@ -183,7 +196,7 @@
       </section>
 
       <section>
-        <div class="section-suscribers">
+        <div data-aos="zoom-in-up" class="section-suscribers">
           <h2 class="text-about">
             Suscribite para enterarte de todos los resultados de los partidos
           </h2>
@@ -197,7 +210,11 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer
+      class="footer"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+    >
       <p class="copyright">© 9z team Club de Esports</p>
       <div class="container-icons">
         <a href="https://www.youtube.com/@9zTeam" aria-label="Youtube"
@@ -229,5 +246,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

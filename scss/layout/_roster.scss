@@ -2,12 +2,66 @@
   @include gradient;
 }
 
+.title {
+  font-family: $Noto-Sans-JP;
+}
+
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.teams{
+  width: 100%;
+  height: 280px;
+  @include flex(space-around, center, column);
+  border-radius: 1em;
+  margin: 32px 0;
+  background-color: $light-purple;
+
+  &__bar {
+    width: 80%;
+    height: auto;
+    border: 1px solid $white;
+  }
+
+  &__btn {
+    font-size: 24px;
+    border: 1px solid $white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background-color: transparent;
+    text-decoration: none;
+    color: $white;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
+
+.team-male {
+  width: 100%;
+  height: 80px;
+  font-family: $Noto-Sans-JP;
+  color: $white;
+  padding: 120px 0;
+}
+
 .card-section {
   display: grid;
   grid-template-columns: 1fr;
 
   .card-custom {
-    display: flex;
+    @include flex(flex-start, center, column);
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 32px;
+    border-radius: 1em;
+    padding: 10px;
+    border: 1px solid $white;
 
     .card-custom-header {
       display: flex;
@@ -19,7 +73,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      @include sizing(100%, 150px);
+      @include sizing(min-width, 150px);
 
 
       .card-custom-logo {
@@ -28,6 +82,7 @@
     }
     .card-custom-image {
       display: flex;
+      min-width: max-content;
 
       .flag {
         @include sizing(36px, 19px);

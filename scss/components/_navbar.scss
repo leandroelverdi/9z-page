@@ -4,6 +4,11 @@
   .logo {
     width: 2.5em;
     height: 2.6em;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform .3s;
+    }
   }
 
   .nav-item {
@@ -18,4 +23,4 @@
       border-radius: 10px;
     }
   }
-} 
+}
