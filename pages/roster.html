@@ -71,6 +71,9 @@
       type="image/x-icon"
     />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Roster</title>
   </head>
   <body class="bg-custom body" data-bs-theme="dark">
@@ -78,7 +81,10 @@
       <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html"
-            ><img class="logo" src="../multimedia/logo.svg" alt="logo representativo del equipo 9z team"
+            ><img
+              class="logo"
+              src="../multimedia/logo.svg"
+              alt="logo representativo del equipo 9z team"
           /></a>
           <button
             class="navbar-toggler"
@@ -97,7 +103,11 @@
             aria-labelledby="navbarOffcanvasLgLabel"
           >
             <div class="offcanvas-header">
-              <img class="logo" src="../multimedia/logo.svg" alt="logo representativo del equipo 9z team" />
+              <img
+                class="logo"
+                src="../multimedia/logo.svg"
+                alt="logo representativo del equipo 9z team"
+              />
               <button
                 type="button"
                 class="btn-close"
@@ -143,12 +153,23 @@
       </nav>
     </header>
     <main class="container mt-5">
+
       <div>
         <h1 class="text-center text-light p-5 title">Roster</h1>
       </div>
 
+      <div class="teams">
+        <a href="#male-team" class="teams__btn">Roster Masculino</a>
+        <span class="teams__bar"></span>
+        <a href="#female-team" class="teams__btn">Roster Femenino</a>
+      </div>
+
+      <div id="male-team" class="team-male">
+        <h2>Roster Masculino: </h2>
+      </div>
+
       <section class="card-section">
-        <div class="card-custom">
+        <div data-aos="zoom-in-up" class="card-custom">
           <div class="card-custom-header">
             <div class="card-custom-info">
               <b class="text-white">Nombre: Gustavo Motta</b>
@@ -157,7 +178,7 @@
             </div>
             <div class="card-custom-image">
               <img
-                src="../multimedia/bandera-Brasil.webp"
+                src="../multimedia/bandera-Brasil.png"
                 alt="Imagen de la bandera Brasileña"
                 class="flag"
               />
@@ -169,11 +190,11 @@
               class="roster-image"
               alt="Imagen donde se lo ve a tge coach de 9z team"
             />
-            <h2 class="text-center text-white">Tge</h2>
+            <h3 class="text-center text-white">Tge</h3>
           </div>
         </div>
 
-        <div class="card-custom">
+        <div data-aos="zoom-in-up" class="card-custom">
           <div class="card-custom-header">
             <div class="card-custom-info">
               <b class="text-white">Nombre: Santino Rigal</b>
@@ -194,11 +215,11 @@
               class="roster-image"
               alt="Imagen donde se lo ve a try jugador de 9z team"
             />
-            <h2 class="text-center text-white">Try</h2>
+            <h3 class="text-center text-white">Try</h3>
           </div>
         </div>
 
-        <div class="card-custom">
+        <div data-aos="zoom-in-up" class="card-custom">
           <div class="card-custom-header">
             <div class="card-custom-info">
               <b class="text-white">Nombre: David Tapia Maldonado </b>
@@ -207,7 +228,7 @@
             </div>
             <div class="card-custom-image">
               <img
-                src="../multimedia/bandera-Chile.webp"
+                src="../multimedia/bandera-Chile.png"
                 alt="Imagen de la bandera chilena"
                 class="flag"
               />
@@ -215,15 +236,16 @@
           </div>
           <div>
             <img
-              src="../multimedia/dav1d.webp"
+              src="../multimedia/davi1deuS.webp"
               class="roster-image"
               alt="Imagen donde se lo ve a David jugador de 9z team"
+              loading="lazy"
             />
-            <h2 class="text-center text-white">Dav1d</h2>
+            <h3 class="text-center text-white">dav1deuS</h3>
           </div>
         </div>
 
-        <div class="card-custom">
+        <div data-aos="zoom-in-up" class="card-custom">
           <div class="card-custom-header">
             <div class="card-custom-info">
               <b class="text-white">Nombre: Nicolás Kramer </b>
@@ -243,12 +265,13 @@
               src="../multimedia/buda.webp"
               class="roster-image"
               alt="Imagen donde se lo ve a buda jugador de 9z team"
+              loading="lazy"
             />
-            <h2 class="text-center text-white">Buda</h2>
+            <h3 class="text-center text-white">Buda</h3>
           </div>
         </div>
 
-        <div class="card-custom">
+        <div data-aos="zoom-in-up" class="card-custom">
           <div class="card-custom-header">
             <div class="card-custom-info">
               <b class="text-white">Nombre: Maximiliano Gonzalez</b>
@@ -259,7 +282,7 @@
             </div>
             <div class="card-custom-image">
               <img
-                src="../multimedia/bandera-Uruguay.webp"
+                src="../multimedia/bandera-Uruguay.svg"
                 alt="Imagen de la bandera Uruguaya"
                 class="flag"
               />
@@ -270,12 +293,13 @@
               src="../multimedia/max.webp"
               class="roster-image"
               alt="Imagen donde se lo ve a max jugador de 9z team"
+              loading="lazy"
             />
-            <h2 class="text-center text-white">Max</h2>
+            <h3 class="text-center text-white">Max</h3>
           </div>
         </div>
 
-        <div class="card-custom">
+        <div data-aos="zoom-in-up" class="card-custom">
           <div class="card-custom-header">
             <div class="card-custom-info">
               <b class="text-white">Nombre: Franco Garcia</b>
@@ -284,7 +308,7 @@
             </div>
             <div class="card-custom-image">
               <img
-                src="../multimedia/bandera-Uruguay.webp"
+                src="../multimedia/bandera-Uruguay.svg"
                 alt="Imagen de la bandera Uruguaya"
                 class="flag"
               />
@@ -295,14 +319,189 @@
               src="../multimedia/dgt.webp"
               class="roster-image"
               alt="Imagen donde se lo ve a dgt jugador de 9z team"
+              loading="lazy"
             />
-            <h2 class="text-center text-white">Dgt</h2>
+            <h3 class="text-center text-white">Dgt</h3>
           </div>
         </div>
       </section>
+
+      <div id="female-team" class="team-male">
+        <h2>Roster Femenino: </h2>
+      </div>
+
+      <section class="card-section">
+
+        <div data-aos="zoom-in-up" class="card-custom">
+          <div class="card-custom-header">
+            <div class="card-custom-info">
+              <b class="text-white">Nombre: Joaquin Abasolo</b>
+              <b class="text-white"> Edad: 29 años</b>
+              <b class="text-white">Roll: Coach Analyst</b>
+            </div>
+            <div class="card-custom-image">
+              <img
+                src="../multimedia/bandera-Argentina.webp"
+                alt="Imagen de la bandera Argentina"
+                class="flag"
+              />
+            </div>
+          </div>
+          <div>
+            <img
+              src="../multimedia/lokomotion.webp"
+              class="roster-image"
+              alt="Imagen donde se lo ve a Lokomotion entrenador de 9z team femenino"
+              loading="lazy"
+            />
+            <h3 class="text-center text-white">Lokomotion</h3>
+          </div>
+        </div>
+
+        <div data-aos="zoom-in-up" class="card-custom">
+          <div class="card-custom-header">
+            <div class="card-custom-info">
+              <b class="text-white">Nombre: Julieta Grillia</b>
+              <b class="text-white"> Edad: 24 años</b>
+              <b class="text-white">Roll: In-game leader Rifler (entry fragger)</b>
+            </div>
+            <div class="card-custom-image">
+              <img
+                src="../multimedia/bandera-Argentina.webp"
+                alt="Imagen de la bandera Argentina"
+                class="flag"
+              />
+            </div>
+          </div>
+          <div>
+            <img
+              src="../multimedia/khizha.webp"
+              class="roster-image"
+              alt="Imagen donde se la ve a Khizha jugadora de 9z team"
+              loading="lazy"
+            />
+            <h3 class="text-center text-white">Khizha</h3>
+          </div>
+        </div>
+
+
+        <div data-aos="zoom-in-up" class="card-custom">
+          <div class="card-custom-header">
+            <div class="card-custom-info">
+              <b class="text-white">Nombre: Evelin Acuña</b>
+              <b class="text-white"> Edad: 28 años</b>
+              <b class="text-white">Roll: Rifler (entry fragger)</b>
+            </div>
+            <div class="card-custom-image">
+              <img
+                src="../multimedia/bandera-Argentina.webp"
+                alt="Imagen de la bandera Argentina"
+                class="flag"
+              />
+            </div>
+          </div>
+          <div>
+            <img
+              src="../multimedia/chjna.webp"
+              class="roster-image"
+              alt="Imagen donde se la ve a chjna jugadora de 9z team"
+              loading="lazy"
+            />
+            <h3 class="text-center text-white">Chjna</h3>
+          </div>
+        </div>
+
+        
+        <div data-aos="zoom-in-up" class="card-custom">
+          <div class="card-custom-header">
+            <div class="card-custom-info">
+              <b class="text-white">Nombre: Aída González</b>
+              <b class="text-white"> Edad: - </b>
+              <b class="text-white">Roll: Rifler</b>
+            </div>
+            <div class="card-custom-image">
+              <img
+                src="../multimedia/bandera-Chile.png"
+                alt="Imagen de la bandera chilena"
+                class="flag"
+              />
+            </div>
+          </div>
+          <div>
+            <img
+              src="../multimedia/churra.webp"
+              class="roster-image"
+              alt="Imagen donde se la ve a chjna jugadora de 9z team"
+              loading="lazy"
+            />
+            <h3 class="text-center text-white">Churra</h3>
+          </div>
+        </div>
+
+
+        <div data-aos="zoom-in-up" class="card-custom">
+          <div class="card-custom-header">
+            <div class="card-custom-info">
+              <b class="text-white">Nombre: Florencia Gasparini</b>
+              <b class="text-white"> Edad: 29 años </b>
+              <b class="text-white">Roll: Awper</b>
+            </div>
+            <div class="card-custom-image">
+              <img
+                src="../multimedia/bandera-Argentina.webp"
+                alt="Imagen de la bandera Argentina"
+                class="flag"
+              />
+            </div>
+          </div>
+          <div>
+            <img
+              src="../multimedia/flossie.webp"
+              class="roster-image"
+              alt="Imagen donde se la ve a flossie jugadora de 9z team"
+              loading="lazy"
+            />
+            <h3 class="text-center text-white">Flossie</h3>
+          </div>
+        </div>
+        
+
+        <div data-aos="zoom-in-up" class="card-custom">
+          <div class="card-custom-header">
+            <div class="card-custom-info">
+              <b class="text-white">Nombre: Camila Natale</b>
+              <b class="text-white"> Edad: 32 años</b>
+              <b class="text-white">Roll: Rifler (lurker)</b>
+            </div>
+            <div class="card-custom-image">
+              <img
+                src="../multimedia/bandera-Brasil.png"
+                alt="Imagen de la bandera Brasileña"
+                class="flag"
+              />
+            </div>
+          </div>
+          <div>
+            <img
+              src="../multimedia/camyy.webp"
+              class="roster-image"
+              alt="Imagen donde se la ve a Camyy jugadora de 9z team"
+              loading="lazy"
+            />
+            <h3 class="text-center text-white">Camyy</h3>
+          </div>
+        </div>
+
+       
+
+      </section>
     </main>
 
-    <footer class="footer">
+    <footer
+      class="footer"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+    >
       <p class="copyright">© 9z team Club de Esports</p>
       <div class="container-icons">
         <a href="https://www.youtube.com/@9zTeam" aria-label="Youtube"
@@ -334,5 +533,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -65,6 +65,9 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link
       rel="shortcut icon"
       href="multimedia/favicon.png"
@@ -79,7 +82,10 @@
       <nav class="navbar navbar-expand-lg bg fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html"
-            ><img class="logo" src="./multimedia/logo.svg" alt="logo representativo del equipo 9z team"
+            ><img
+              class="logo"
+              src="./multimedia/logo.svg"
+              alt="logo representativo del equipo 9z team"
           /></a>
           <button
             class="navbar-toggler"
@@ -98,7 +104,11 @@
             aria-labelledby="navbarOffcanvasLgLabel"
           >
             <div class="offcanvas-header">
-              <img class="logo" src="./multimedia/logo.svg" alt="logo representativo del equipo 9z team" />
+              <img
+                class="logo"
+                src="./multimedia/logo.svg"
+                alt="logo representativo del equipo 9z team"
+              />
               <button
                 type="button"
                 class="btn-close"
@@ -144,45 +154,101 @@
       </nav>
     </header>
     <main>
-      <section class="hero-section mb-5">
-        <img class="hero" src="./multimedia/9z-fondo.jpg" alt="Banner principal de la pagina donde se ve el logo de 9z team" />
+      <section class="hero-section">
+        <img
+          src="./multimedia/9z-fondo.jpg"
+          alt="Banner principal de la pagina donde se ve el logo de 9z team"
+          class="hero"
+          loading="lazy"
+        >
+        </img>
+        <a href="#section-description" aria-label="Arrow-scroll-down"
+          ><span class="scroll"></span
+        ></a>
       </section>
 
-      <section class="container py-5">
-        <p class="mb-5 fs-2 text-center">
+      <section
+        id="section-description"
+        class="container section-description mb-4"
+      >
+        <div class="container__typing">
+          <h2 class="typing">¡Club de Esports!</h2>
+        </div>
+        <p
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          class="mb-5 fs-2 text-center"
+        >
           9z Team es una organización de deportes electrónicos (esports) con
           sede en Argentina. la organizacíon se dedica a la competición en
           diversos videojuegos populares, como Counter-Strike: Global Offensive
           (CS:GO), League of Legends (LoL), Fortnite, y otros. En este pequeño
           blog vamos a dar especial enfoque el apartado de Counter-Strike.
-          informandote de su actual roster y brindar las ultimas noticias acerca de
-          partidos jugados.
+          informandote de su actual roster y brindar las ultimas noticias acerca
+          de partidos jugados.
         </p>
+
         <div class="grid-container">
-          <div class="grid-item">
-            <img src="./multimedia/csgo-1.webp" alt="Imagenes que representan logros de 9z team" class="grid-image" />
+          <div data-aos="zoom-in-up" class="grid-item">
+            <img
+              src="./multimedia/csgo-1.webp"
+              alt="Imagenes que representan logros de 9z team"
+              class="grid-image"
+              loading="lazy"
+            />
           </div>
-          <div class="grid-item">
-            <img src="./multimedia/csgo-2.webp" alt="Imagenes que representan logros de 9z team" class="grid-image" />
+          <div data-aos="zoom-in-up" class="grid-item">
+            <img
+              src="./multimedia/csgo-2.webp"
+              alt="Imagenes que representan logros de 9z team"
+              class="grid-image"
+              loading="lazy"
+            />
           </div>
-          <div class="grid-item">
-            <img src="./multimedia/csgo-3.webp" alt="Imagenes que representan logros de 9z team" class="grid-image" />
+          <div data-aos="zoom-in-up" class="grid-item">
+            <img
+              src="./multimedia/csgo-3.webp"
+              alt="Imagenes que representan logros de 9z team"
+              class="grid-image"
+              loading="lazy"
+            />
           </div>
-          <div class="grid-item">
-            <img src="./multimedia/csgo-4.webp" alt="Imagenes que representan logros de 9z team" class="grid-image" />
+          <div data-aos="zoom-in-up" class="grid-item">
+            <img
+              src="./multimedia/csgo-4.webp"
+              alt="Imagenes que representan logros de 9z team"
+              class="grid-image"
+              loading="lazy"
+            />
           </div>
-          <div class="grid-item">
-            <img src="./multimedia/csgo-5.webp" alt="Imagenes que representan logros de 9z team" class="grid-image" />
+          <div data-aos="zoom-in-up" class="grid-item">
+            <img
+              src="./multimedia/csgo-5.webp"
+              alt="Imagenes que representan logros de 9z team"
+              class="grid-image"
+              loading="lazy"
+            />
           </div>
-          <div class="grid-item">
-            <img src="./multimedia/csgo-6.webp" alt="Imagenes que representan logros de 9z team" class="grid-image" />
+          <div data-aos="zoom-in-up" class="grid-item">
+            <img
+              src="./multimedia/csgo-6.webp"
+              alt="Imagenes que representan logros de 9z team"
+              class="grid-image"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <p class="copyright">© 9z team Club de Esports</p>
+    <footer
+      class="footer"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+    >
+      <p class="copyright">
+        © 9z team Pagina hecha por un fan sin fines de lucro
+      </p>
       <div class="container-icons">
         <a href="https://www.youtube.com/@9zTeam" aria-label="Youtube"
           ><i class="fa-brands fa-youtube icon"></i
@@ -212,5 +278,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
