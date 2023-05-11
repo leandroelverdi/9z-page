@@ -48,7 +48,8 @@
   }
 
   .section__team {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 500px);
+    justify-content: space-around;
     gap: 32px;
 
     .section__team__card {
@@ -57,7 +58,7 @@
 
       &__header {
         @include flex(space-between, flex-start, column-reverse);
-        @include sizing(100%, 300px);
+        @include sizing(100%, 280px);
       }
     }
   }
@@ -143,7 +144,6 @@
       }
     }
 
-    
     &__container__form {
       width: 60%;
       display: flex;
@@ -186,11 +186,11 @@
         @include sizing(100%);
 
         &__image:first-child {
-          @include sizing(260px);
+          @include sizing(260px, 100%);
         }
 
         &__image:last-child {
-          @include sizing(400px);
+          @include sizing(400px, 100%);
         }
       }
     }

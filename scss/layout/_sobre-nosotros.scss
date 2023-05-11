@@ -11,12 +11,12 @@
       @include flex(flex-start, center, column);
 
       &__image {
-        @include sizing(240px);
+        @include sizing(240px, 100%);
         object-fit: cover;
       }
 
       &__image:last-child {
-        @include sizing(100%);
+        @include sizing(100%, 100%);
       }
     }
   }

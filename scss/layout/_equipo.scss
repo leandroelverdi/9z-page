@@ -47,8 +47,9 @@
       @include sizing(100%);
 
       &__info {
-        @include flex(space-between, flex-start, column);
-        @include sizing(min-width, 150px);
+        @include flex(center, flex-start, column);
+        @include sizing(100%, auto);
+        gap: 1em;
 
         &__text {
           @include text($roster__text__color);

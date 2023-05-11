@@ -1,0 +1,2 @@
+1: Pagina de contactos (La imagen del formulario esta chueca)
+2: Pagina de roster, hacer las cards menos anchas
