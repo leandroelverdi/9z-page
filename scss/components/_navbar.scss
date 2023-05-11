@@ -1,9 +1,9 @@
 .navbar {
-  background-color: $bg-dark;
+  @include sizing(100%, $nav__height);
+  background-color: $nav__background;
 
   .logo {
-    width: 2.5em;
-    height: 2.6em;
+    @include sizing(2.5em);
 
     &:hover {
       transform: scale(1.1);
@@ -16,10 +16,10 @@
     margin-left: 5px;
     padding: 0 5px;
     font-weight: 700;
-    font-family: "Cinzel Decorative", cursive;
+    font-family: $nav__font;
 
     &:hover {
-      outline: 2px solid #fff;
+      outline: 2px solid $nav__outlineColor;
       border-radius: 10px;
     }
   }

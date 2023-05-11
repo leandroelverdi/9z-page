@@ -1,6 +1,7 @@
 @media screen and (min-width: 992px) {
   // Estilos para el index
-  .grid-container {
+
+  .section__grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
@@ -9,50 +10,66 @@
       "area-3 area-3 area-4";
   }
 
-  .hero {
-    @include sizing(100%, 100vh);
-    object-fit: cover;
+  .section__description__container {
+    margin-bottom: 32px;
+  }
+
+  .section__description__container__typing {
+    font-size: 32px;
+  }
+
+  .section__description__text {
+    font-size: 24px;
   }
 
   //Estilos para Roster
 
   .teams {
-    flex-direction: row;
-    justify-content: space-around;
+    @include sizing(100%, 300px);
+    @include flex(space-around, center, row);
+    margin: 120px 0;
+    padding: 0 1em;
 
     &__bar {
-      width: 0;
-      height: 100%;
-      transform: rotate(25deg);
+      @include sizing(380px);
+      transform: rotate(45deg);
+      border: 1px solid $roster__teams_colorBar;
+    }
+
+    &__btn {
+      font-size: 28px;
+      padding: 4px 16px;
+      border-radius: 8px;
     }
   }
 
-  .card-section {
+  .team__title {
+    padding: 128px 0 32px 0;
+  }
+
+  .section__team {
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 32px;
 
-    .card-custom {
+    .section__team__card {
       @include flex(flex-start, center);
+      @include sizing(100%, auto);
 
-      .card-custom-header {
-        display: flex;
-        flex-direction: column;
-        flex-direction: column-reverse;
-        width: 100%;
-        height: 300px;
+      &__header {
+        @include flex(space-between, flex-start, column-reverse);
+        @include sizing(100%, 300px);
       }
     }
   }
 
   // Estilos para Noticias
   .container__card {
-
     &__news {
       @include flex(space-between, center, row);
 
       &__image {
         object-fit: cover;
-        max-width: 360px;
+        max-width: 380px;
         height: 100%;
         clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
       }
@@ -62,62 +79,143 @@
         padding: 10px;
         width: 100%;
         height: 100%;
+
+        &__btn {
+          align-self: flex-end;
+        }
       }
     }
   }
 
   // Estilos para Contacto
 
-  .container-form {
-    .form {
-      @include flex(space-between, center);
+  .container__subscriber {
+    height: 240px;
 
-      .image-contact {
-        @include sizing(18em, 100%);
+    &__title {
+      font-size: 24px;
+    }
+
+    &__form {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+      margin-top: 32px;
+
+      &__inputText {
+        width: 50%;
+        border: none;
+        border-bottom: 1px solid $border__color__default;
+        background-color: transparent;
+        font-size: 18px;
+        outline: none;
+        color: #fff;
+
+        &::placeholder {
+          color: #fff;
+        }
       }
 
-      .container-contact {
-        max-width: 75%;
-        margin-left: 2em;
+      &__containerSubmit {
+        width: 20%;
+      }
+    }
+  }
+
+  .section {
+    flex-direction: row;
+    height: 400px;
+
+    &__container {
+      min-width: 40%;
+      height: 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0 32px;
+
+      &__image {
+        width: 400px;
+      }
+    }
+
+    
+    &__container__form {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 0;
+
+      &__title {
+        font-size: 24px;
+        margin-bottom: 24px;
+      }
+
+      &__submit {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        &__btn {
+          width: 100%;
+          padding: 6px 0;
+          background-color: transparent;
+          border: 1px solid $border__color__default;
+          border-radius: 6px;
+          color: $text__color__default;
+        }
       }
     }
   }
 
   // Estilos para sobre nosotros
 
-  .section-suscribers {
-    .image-about-me {
-      @include sizing(16em, 100%);
-    }
+  .aboutMe {
+    flex-direction: row;
 
-    .form-about {
-      @include flex(space-around, center);
+    &__picture {
+      @include flex(space-around, center, column);
 
-      .input-about {
-        width: 50%;
-      }
+      &__container {
+        @include flex(space-around, center, row);
+        @include sizing(100%);
 
-      .container-submit-about {
-        @include sizing(15%);
+        &__image:first-child {
+          @include sizing(260px);
+        }
+
+        &__image:last-child {
+          @include sizing(400px);
+        }
       }
     }
   }
+
+  .aboutMe__section {
+    margin-top: 1em;
+  }
+
   // Estilos footer
   .footer {
     padding: 0 14%;
     flex-direction: row;
     @include sizing(100%, 100px);
 
-    .copyright {
+    &__copyright {
       font-size: 20px;
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
-  // Estilos Pagina Noticias
-  .card-custom:hover {
-    outline: 1px solid #fff;
+  .section__container {
+    &__image {
+      width: 480px;
+    }
   }
-  // Fin estilos Pagina Noticias
 }

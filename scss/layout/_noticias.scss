@@ -2,45 +2,50 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 32px;
+  gap: 64px;
   margin: 32px 0;
 
   &__news {
     @include flex(center, center, column);
-    width: 100%;
+    @include sizing(100%);
     overflow: hidden;
-    border: 1px solid $white;
+    border: 1px solid $noticias__borderColor;
     border-radius: 1em;
 
     &__image {
-      width: 100%;
-      height: min-content;
+      @include sizing(100%, min-content);
     }
 
     &__text {
-      color: $white;
-      font-size: 1em;
+      @include text($noticias__text__color, 1em);
     }
 
     &__content {
       @include flex(space-between, center, column);
+      @include sizing(100%, 100%);
       padding: 10px;
-      height: 100%;
 
       &__title {
-        color: $white;
-        font-size: 1em;
+        @include text($noticias__text__color, 1em);
       }
 
       &__text {
-        font-size: 16px;
-        color: $white;
+        @include text($noticias__text__color, 1em);
       }
 
       &__btn {
+        @include text($noticias__btn__color, 1em, center);
         text-decoration: none;
-        color: $white;
-        align-self: flex-end;
+        align-self: center;
+        margin-top: 20px;
+        border: 1px solid $noticias__borderColor__btn;
+        border-radius: 8px;
+        padding: 5px 10px;
+
+        &:active {
+          border-color: $noticias__borderColor__btnAct;
+          color: $noticias__btn__colorAct;
+        }
       }
     }
   }

@@ -1,0 +1,4 @@
+.title {
+  padding-top: $nav__height + 40px;
+  @include text($headline__color, $headline__size, center);
+}

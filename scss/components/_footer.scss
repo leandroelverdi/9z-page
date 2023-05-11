@@ -1,22 +1,25 @@
 .footer {
+  position: static;
+  bottom: 0;
   @include flex(space-between, center, column);
   @include sizing(100%, 140px);
-  background-color: $bg-dark;
+  background-color: $footer__background;
   align-self: flex-end;
+  font-family: $footer__font;
 
-  .container-icons {
+  &__copyright {
+    @include text($text__color__default, 1em, center);
+    padding: 4px 8px;
+    margin: 0;
+  }
+
+  &__icons {
     @include sizing(18%, 100%);
     @include flex(space-around, center);
 
-    .icon {
-      @include text($white, 28px);
+    &__icon {
+      @include text($text__color__default, 28px);
       padding: 0 20px;
     }
-  }
-
-  .copyright {
-    @include text($white, 1em, center);
-    padding: 4px 8px;
-    margin: 0;
   }
 }

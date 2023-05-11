@@ -71,14 +71,14 @@
 
     <link
       rel="shortcut icon"
-      href="../multimedia/favicon.png"
+      href="../multimedia/logo.svg"
       type="image/x-icon"
     />
 
     <title>Contacto</title>
   </head>
 
-  <body class="bg-custom body" data-bs-theme="dark">
+  <body class="background">
     <header>
       <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
@@ -154,69 +154,84 @@
         </div>
       </nav>
     </header>
-    <main class="container mt-5">
+    <main class="container">
+      <h1 class="title">Contacto</h1>
+
       <section>
-        <h1 class="text-center text-light p-5">Contacto</h1>
-        <div data-aos="zoom-in-up" class="container-form">
-          <div class="form">
-            <img
-              class="image-contact"
-              src="../multimedia/contacto.webp"
-              alt="Imagen para el formulario de contacto"
+        <div data-aos="zoom-in-up" class="container__subscriber">
+          <h3 class="container__subscriber__title">
+            Suscribite para enterarte de todos los resultados de los partidos
+          </h3>
+          <form class="container__subscriber__form">
+            <input
+              type="text"
+              class="container__subscriber__form__inputText"
+              placeholder="Correo:"
             />
-            <div class="container-contact">
-              <h2 class="text">
-                Si tenes algun aporte que nos quieras dar con gusto te leémos.
-              </h2>
-
-              <form class="form-inputs">
-                <input
-                  type="text"
-                  class="input-contact"
-                  placeholder="Nombre:"
-                />
-
-                <input
-                  type="email"
-                  class="input-contact"
-                  placeholder="Correo:"
-                />
-
-                <textarea
-                  class="input-text-area"
-                  placeholder="Mensaje:"
-                ></textarea>
-                <div class="container-input-submit">
-                  <input
-                    type="submit"
-                    value="Enviar"
-                    class="input-submit input-submit-contact"
-                  />
-                </div>
-              </form>
+            <div class="container__subscriber__form__containerSubmit">
+              <input
+                type="submit"
+                value="Suscribirse"
+                class="container__subscriber__form__containerSubmit__btn"
+              />
             </div>
-          </div>
+          </form>
         </div>
+      </section>
+
+      <section class="section">
+        <div class="section__container">
+          <img
+            class="section__container__image"
+            src="../multimedia/fondo-form.png"
+            alt=""
+          />
+        </div>
+
+        <form class="section__container__form">
+          <h2 class="section__container__form__title">Consultas:</h2>
+          <input
+            type="text"
+            class="section__container__form__inputText"
+            placeholder="Nombre:"
+          />
+
+          <input
+            type="email"
+            class="section__container__form__inputText"
+            placeholder="Correo:"
+          />
+
+          <textarea
+            class="section__container__form__inputTextArea"
+            placeholder="Mensaje:"
+          ></textarea>
+          <div class="section__container__form__submit">
+            <input
+              type="submit"
+              value="Enviar"
+              class="section__container__form__submit__btn"
+            />
+          </div>
+        </form>
       </section>
     </main>
 
-    <footer
-      class="footer"
-      data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom"
-    >
-      <p class="copyright">© 9z team Club de Esports</p>
-      <div class="container-icons">
+    <footer class="footer">
+      <p class="footer__copyright">
+        © 9z team Pagina hecha por un fan sin fines de lucro
+      </p>
+      <div class="footer__icons">
         <a href="https://www.youtube.com/@9zTeam" aria-label="Youtube"
-          ><i class="fa-brands fa-youtube icon"></i
+          ><i class="fa-brands fa-youtube footer__icons__icon"></i
         ></a>
 
         <a href="https://twitter.com/9zTeam" aria-label="Twitter"
-          ><i class="fa-brands fa-twitter icon"></i
+          ><i class="fa-brands fa-twitter footer__icons__icon"></i
         ></a>
 
         <a href="https://www.instagram.com/9zteam" aria-label="Instagram">
-          <i class="fa-brands fa-instagram icon"></i
+          <i class="fa-brands fa-instagram footer__icons__icon"></i
         ></a>
       </div>
     </footer>

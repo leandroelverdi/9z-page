@@ -1,102 +1,78 @@
-.bg-custom {
-  @include gradient;
-}
-
-.title {
-  font-family: $Noto-Sans-JP;
-}
-
-.body {
-  min-height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.teams{
-  width: 100%;
-  height: 280px;
+.teams {
+  @include sizing(100%, 280px);
   @include flex(space-around, center, column);
   border-radius: 1em;
-  margin: 32px 0;
-  background-color: $light-purple;
+  background-color: $bg__cards;
+  margin: 100px 0;
 
   &__bar {
-    width: 80%;
-    height: auto;
-    border: 1px solid $white;
+    @include sizing(80%);
+    border: 1px solid $roster__teams_colorBar;
   }
 
   &__btn {
-    font-size: 24px;
-    border: 1px solid $white;
+    @include text($roster__text__color, 24px);
+    border: 1px solid $roster__border__color;
     padding: 4px 8px;
     border-radius: 8px;
     background-color: transparent;
     text-decoration: none;
-    color: $white;
 
     &:hover {
-      opacity: .8;
+      opacity: 0.8;
     }
   }
 }
 
-.team-male {
-  width: 100%;
-  height: 80px;
-  font-family: $Noto-Sans-JP;
-  color: $white;
-  padding: 120px 0;
+.team__title {
+  @include text($roster__text__color, 32px);
+  padding: 80px 0 32px 0;
 }
 
-.card-section {
+.section__team {
   display: grid;
   grid-template-columns: 1fr;
 
-  .card-custom {
+  .section__team__card {
     @include flex(flex-start, center, column);
-    width: 100%;
+    @include sizing(100%);
     min-height: 300px;
     margin-bottom: 32px;
     border-radius: 1em;
     padding: 10px;
-    border: 1px solid $white;
+    border: 1px solid $roster__border__color;
 
-    .card-custom-header {
-      display: flex;
+    &__header {
+      @include flex(space-between);
       @include sizing(100%);
-      justify-content: space-between;
-    }
 
-    .card-custom-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      @include sizing(min-width, 150px);
+      &__info {
+        @include flex(space-between, flex-start, column);
+        @include sizing(min-width, 150px);
 
-
-      .card-custom-logo {
-        @include sizing(64px) 
+        &__text {
+          @include text($roster__text__color);
+        }
       }
-    }
-    .card-custom-image {
-      display: flex;
-      min-width: max-content;
+      &__image {
+        display: flex;
+        min-width: max-content;
 
-      .flag {
-        @include sizing(36px, 19px);
-        object-fit: cover
+        &__flag {
+          @include sizing(38px, 24px);
+          object-fit: cover;
+          border-radius: 4px;
+        }
       }
     }
 
-    .card-custom-image-logo {
-      @include sizing(26px);
-    }
-
-    .roster-image {
+    &__rosterImg {
       @include sizing(100%, 220px);
       object-fit: cover;
+    }
+
+    &__text {
+      @include text($roster__text__color, 16px, center);
     }
   }
 }

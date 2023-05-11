@@ -1,21 +1,11 @@
-// Mixing de gradiente
-@mixin gradient() {
-  background: linear-gradient(
-    140deg,
-    $purple 0%,
-    $light-purple 40%,
-    $pink 100%
-  );  
-}
-
 @mixin sizing($w, $h: auto) {
   width: $w;
   height: $h;
 }
 
-@mixin flex($justify, $align, $direct: row) {
+@mixin flex($justify, $align: flex-start, $direction: row) {
   display: flex;
-  flex-direction: $direct;
+  flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
 }

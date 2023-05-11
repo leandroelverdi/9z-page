@@ -1,21 +1,29 @@
 // Imports base
-@import 'base/vars';
-@import 'base/utilidades';
-
+@import "base/vars";
+@import "base/utilidades";
 
 //Imports componentes
-@import 'components/navbar';
-@import 'components/footer';
-
+@import "components/navbar";
+@import "components/footer";
+@import "components/scroll-up";
+@import "components/headline";
 
 // Imports layouts
-@import 'layout/index';
-@import 'layout/roster';
-@import 'layout/noticias';
-@import 'layout/contactos';
-@import 'layout/sobre-nosotros';
+@import "layout/index";
+@import "layout/roster";
+@import "layout/noticias";
+@import "layout/contactos";
+@import "layout/sobre-nosotros";
 
 // Media queries
-@import 'layout/media-queries';
+@import "layout/media-queries";
 
-
+.background {
+  position: relative;
+  background: linear-gradient(
+    140deg,
+    $bg-gradient-color1 0%,
+    $bg-gradient-color2 40%,
+    $bg-gradient-color3 100%
+  );
+}

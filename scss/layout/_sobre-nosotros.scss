@@ -1,67 +1,42 @@
-.image-about-me {
-  @include sizing(14em, 100%);
-}
+.aboutMe {
+  @include flex(flex-start, center, column);
 
-.text-about-me {
-  font-size: 1em;
-}
+  &__picture {
+    @include flex(flex-start, center, column);
+    @include text($text__color__default, 32px);
+    @include sizing(100%);
+    margin-bottom: 64px;
 
-.input {
-  @include text($white, 18px);
-  background-color: transparent;
-  padding-left: 5px;
-  width: 100%;
+    &__container {
+      @include flex(flex-start, center, column);
 
-  &::placeholder {
-    color: $white;
+      &__image {
+        @include sizing(240px);
+        object-fit: cover;
+      }
+
+      &__image:last-child {
+        @include sizing(100%);
+      }
+    }
   }
-
-  &:focus {
-    outline: none;
-  }
 }
 
-.input-submit {
-  @include text($white, 18px);
-  background-color: transparent;
-  margin-top: 16px;
-  text-align: center;
-}
+.wrapper {
+  margin: 64px 0;
 
-.section-suscribers {
-  @include flex(center, center, column);
-  @include sizing(100%, 500px);
+  &__aboutMe__section {
+    background-color: $bg__cards;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 32px 0;
 
-  .text-about {
-    @include text($white, 1.8em, center);
-  }
-
-  .form-about {
-    @include sizing(100%, 150px);
-    @include flex(space-around, center, column);
-    margin-top: 60px;
-
-    .input-about {
-      @extend .input;
-      width: 100%;
-      border: none;
-      border-bottom: 1px solid $white;
+    &__title {
+      @include text($text__color__default, 32px, center);
     }
 
-    .container-submit-about {
-      @include sizing(100%);
-
-      .submit-about {
-        @extend .input-submit;
-        @include sizing(100%);
-        padding: 10px 0;
-        border-radius: 6px;
-        border: 1px solid $white;
-
-        &:hover {
-          background-color: $black;
-        }
-      }
+    &__text {
+      @include text($text__color__default, 20px);
     }
   }
 }

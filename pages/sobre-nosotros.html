@@ -71,13 +71,13 @@
 
     <link
       rel="shortcut icon"
-      href="../multimedia/favicon.png"
+      href="../multimedia/logo.svg"
       type="image/x-icon"
     />
 
     <title>9z team</title>
   </head>
-  <body class="bg-custom body" data-bs-theme="dark">
+  <body class="background">
     <header>
       <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
@@ -153,80 +153,109 @@
         </div>
       </nav>
     </header>
-    <main class="container my-5">
-      <section>
-        <h1 class="text-center text-light p-5 title">Sobre Nosotros</h1>
-      </section>
+    <main id="main" class="container">
+      <h1 class="title">Sobre Nosotros</h1>
 
-      <section>
+      <a href="#main">
         <div
-          data-aos="zoom-in-up"
-          class="container d-flex flex-column flex-lg-row-reverse align-items-center"
-        >
-          <div class="d-flex flex-column align-items-center">
+          data-aos="fade-up"
+          data-aos-anchor="#scroll-up"
+          class="scroll__up"
+        ></div>
+      </a>
+
+      <div class="wrapper">
+        <section class="wrapper__aboutMe__section">
+          <h3 class="wrapper__aboutMe__section__title">Inicios de 9z team</h3>
+          <p class="wrapper__aboutMe__section__text">
+            Frankkaster, también conocido como Francisco Postiglione, fundó 9z
+            Team en Argentina en el año 2018. La idea detrás de la creación de
+            este equipo de deportes electrónicos era desarrollar una
+            organización competitiva y profesional que pudiera competir a nivel
+            internacional en varios juegos populares, como Counter-Strike:
+            Global Offensive, Fortnite, Rainbow Six Siege y más. <br />
+            <br />
+            Hoy en día, 9z Team cuenta con varios equipos de deportes
+            electrónicos que compiten en torneos de todo el mundo, incluidos
+            equipos de Counter-Strike: Global Offensive, Rainbow Six Siege y
+            Valorant. Frankkaster sigue liderando la organización y trabajando
+            para hacer crecer el equipo y llevarlo a la cima del mundo de los
+            deportes electrónicos.
+          </p>
+        </section>
+
+        <section class="wrapper__aboutMe__section">
+          <h3 class="wrapper__aboutMe__section__title">Mision:</h3>
+          <p class="wrapper__aboutMe__section__text">
+            La misión de 9z Team, según su sitio web oficial, es "ser un equipo
+            de referencia en el deporte electrónico de América Latina,
+            representando la pasión y el profesionalismo argentino en
+            competiciones de alto nivel a nivel mundial".
+          </p>
+        </section>
+
+        <section class="wrapper__aboutMe__section">
+          <h3 class="wrapper__aboutMe__section__title">Vison:</h3>
+          <p class="wrapper__aboutMe__section__text">
+            En cuanto a la visión del equipo, se puede inferir que se basa en su
+            misión y en su compromiso con la excelencia. El equipo busca
+            consolidar su posición en el mercado de los deportes electrónicos en
+            América Latina y a nivel mundial, y ser reconocido como un equipo de
+            alto rendimiento que compite a nivel global.
+          </p>
+        </section>
+
+        <section id="scroll-up" class="wrapper__aboutMe__section">
+          <h3 class="wrapper__aboutMe__section__title">Valores:</h3>
+          <p class="wrapper__aboutMe__section__text">
+            Además, en su sitio web, 9z Team se compromete a brindar un ambiente
+            de trabajo y entrenamiento saludable y respetuoso, y a fomentar el
+            crecimiento personal y profesional de sus jugadores y staff, con el
+            objetivo de promover el desarrollo de talentos jóvenes en la escena
+            de los deportes electrónicos. En resumen, la misión y visión de 9z
+            Team se enfocan en ser un equipo de referencia en los deportes
+            electrónicos de América Latina y a nivel mundial, destacando el
+            profesionalismo argentino y promoviendo el crecimiento personal y
+            profesional de su equipo.
+          </p>
+        </section>
+      </div>
+
+      <section data-aos="zoom-in-up" class="aboutMe">
+        <div class="aboutMe__picture">
+          <div class="aboutMe__picture__container">
             <img
-              class="image-about-me"
               src="../multimedia/frankaster.svg"
               alt="Imagen del CEO y Dueño del club de Esports 9z team"
+              class="aboutMe__picture__container__image"
             />
-            <h2 class="h3 text-center text-light">Frankaster</h2>
-            <b class="text-white mb-4 mb-lg-0">CEO & OWNER</b>
+            <img
+              src="../multimedia/pinCsgo-9z.webp"
+              alt="Pin de 9z team"
+              class="aboutMe__picture__container__image"
+            />
           </div>
-
-          <div>
-            <h2 class="text-light text-center">Inicios de 9z team</h2>
-            <p class="text-light text-about-me">
-              Frankkaster, también conocido como Francisco Postiglione, fundó 9z
-              Team en Argentina en el año 2018. La idea detrás de la creación de
-              este equipo de deportes electrónicos era desarrollar una
-              organización competitiva y profesional que pudiera competir a
-              nivel internacional en varios juegos populares, como
-              Counter-Strike: Global Offensive, Fortnite, Rainbow Six Siege y
-              más. <br />
-              <br />
-              Hoy en día, 9z Team cuenta con varios equipos de deportes
-              electrónicos que compiten en torneos de todo el mundo, incluidos
-              equipos de Counter-Strike: Global Offensive, Rainbow Six Siege y
-              Valorant. Frankkaster sigue liderando la organización y trabajando
-              para hacer crecer el equipo y llevarlo a la cima del mundo de los
-              deportes electrónicos.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div data-aos="zoom-in-up" class="section-suscribers">
-          <h2 class="text-about">
-            Suscribite para enterarte de todos los resultados de los partidos
-          </h2>
-          <form class="form-about">
-            <input type="text" class="input-about" placeholder="Correo:" />
-            <div class="container-submit-about">
-              <input type="submit" value="Enviar" class="submit-about" />
-            </div>
-          </form>
+          <h2>Frankaster</h2>
+          <b>CEO & OWNER</b>
         </div>
       </section>
     </main>
 
-    <footer
-      class="footer"
-      data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom"
-    >
-      <p class="copyright">© 9z team Club de Esports</p>
-      <div class="container-icons">
+    <footer class="footer">
+      <p class="footer__copyright">
+        © 9z team Pagina hecha por un fan sin fines de lucro
+      </p>
+      <div class="footer__icons">
         <a href="https://www.youtube.com/@9zTeam" aria-label="Youtube"
-          ><i class="fa-brands fa-youtube icon"></i
+          ><i class="fa-brands fa-youtube footer__icons__icon"></i
         ></a>
 
         <a href="https://twitter.com/9zTeam" aria-label="Twitter"
-          ><i class="fa-brands fa-twitter icon"></i
+          ><i class="fa-brands fa-twitter footer__icons__icon"></i
         ></a>
 
         <a href="https://www.instagram.com/9zteam" aria-label="Instagram">
-          <i class="fa-brands fa-instagram icon"></i
+          <i class="fa-brands fa-instagram footer__icons__icon"></i
         ></a>
       </div>
     </footer>

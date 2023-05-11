@@ -1,18 +1,31 @@
 // Google font Cinzel Decorative y Noto Sans RobotoMono
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Noto+Sans+JP&family=Roboto+Mono:wght@600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Noto+Sans+JP&family=Roboto+Mono:wght@600;700&display=swap");
 
-//Fuentes 
-$Cinzel-Decorative: 'Cinzel Decorative';
-$Noto-Sans-JP: 'Noto Sans JP';
-$Roboto-Mono: 'Roboto Mono';
-
-//Paleta de colores
-$white: #FFFFFF;
-$black: #000000;
-$grey: #dee2e6;
-$grey-light: #ffffff66;
-$bg-dark: #000000cc;
-$purple: #6900b6b4;
-$light-purple: #c21dfdb1;
-$pink: #f85783;
- 
+$bg__cards: #c21dfdb1;
+$nav__background: #000000cc;
+$nav__font: "Cinzel Decorative";
+$nav__outlineColor: #ffffff;
+$nav__height: 80px;
+$headline__color: #ffffff;
+$headline__size: 42px;
+$index__typingFont: "Roboto Mono";
+$index__arrowColor: #ffffff;
+$index__descriptionColor: #000000;
+$roster__teams_colorBar: #ffffff;
+$roster__text__color: #ffffff;
+$roster__border__color: #ffffff;
+$noticias__text__color: #ffffff;
+$noticias__borderColor: #ffffff;
+$noticias__btn__color: #ffffff;
+$noticias__btn__colorAct: #ffffff66;
+$noticias__borderColor__btn: #ffffff;
+$noticias__borderColor__btnAct: #ffffff66;
+$footer__background: #000000cc;
+$footer__font: "Noto Sans JP";
+$bg-gradient-color1: #6900b6b4;
+$bg-gradient-color2: #c21dfdb1;
+$bg-gradient-color3: #f85783;
+$scroll-up__background: #000000cc;
+$scroll-up__backgroundAct: #c21dfdb1;
+$text__color__default: #FFFFFF;
+$border__color__default: #FFFFFF;

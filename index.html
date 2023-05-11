@@ -70,7 +70,7 @@
 
     <link
       rel="shortcut icon"
-      href="multimedia/favicon.png"
+      href="multimedia/logo.svg"
       type="image/x-icon"
     />
 
@@ -153,32 +153,35 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section class="hero-section">
+    <main id="main">
+      <a href="#main" aria-label="Arrow-scroll-up"
+        ><div
+          data-aos="fade-up"
+          data-aos-anchor="#section-description"
+          class="scroll__up"
+        ></div
+      ></a>
+
+      <section class="section__hero">
         <img
-          src="./multimedia/9z-fondo.jpg"
+          src="./multimedia/9z-fondo.webp"
           alt="Banner principal de la pagina donde se ve el logo de 9z team"
-          class="hero"
+          class="section__hero__image"
           loading="lazy"
-        >
-        </img>
+        />
+
         <a href="#section-description" aria-label="Arrow-scroll-down"
-          ><span class="scroll"></span
+          ><span class="section__hero__scrollDown"></span
         ></a>
       </section>
 
-      <section
-        id="section-description"
-        class="container section-description mb-4"
-      >
-        <div class="container__typing">
-          <h2 class="typing">¡Club de Esports!</h2>
+      <section id="section-description" class="container section__description">
+        <div class="section__description__container">
+          <h2 class="section__description__container__typing">
+            ¡Club de Esports!
+          </h2>
         </div>
-        <p
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          class="mb-5 fs-2 text-center"
-        >
+        <p data-aos="fade-up" class="section__description__text">
           9z Team es una organización de deportes electrónicos (esports) con
           sede en Argentina. la organizacíon se dedica a la competición en
           diversos videojuegos populares, como Counter-Strike: Global Offensive
@@ -187,79 +190,99 @@
           informandote de su actual roster y brindar las ultimas noticias acerca
           de partidos jugados.
         </p>
+      </section>
 
-        <div class="grid-container">
-          <div data-aos="zoom-in-up" class="grid-item">
+      <section class="container section__grid">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-offset="300"
+            class="section__grid__item"
+          >
             <img
               src="./multimedia/csgo-1.webp"
               alt="Imagenes que representan logros de 9z team"
-              class="grid-image"
+              class="section__grid__item__image"
               loading="lazy"
             />
           </div>
-          <div data-aos="zoom-in-up" class="grid-item">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-offset="300"
+            class="section__grid__item"
+          >
             <img
               src="./multimedia/csgo-2.webp"
               alt="Imagenes que representan logros de 9z team"
-              class="grid-image"
+              class="section__grid__item__image"
               loading="lazy"
             />
           </div>
-          <div data-aos="zoom-in-up" class="grid-item">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-offset="300"
+            class="section__grid__item"
+          >
             <img
               src="./multimedia/csgo-3.webp"
               alt="Imagenes que representan logros de 9z team"
-              class="grid-image"
+              class="section__grid__item__image"
               loading="lazy"
             />
           </div>
-          <div data-aos="zoom-in-up" class="grid-item">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-offset="300"
+            class="section__grid__item"
+          >
             <img
               src="./multimedia/csgo-4.webp"
               alt="Imagenes que representan logros de 9z team"
-              class="grid-image"
+              class="section__grid__item__image"
               loading="lazy"
             />
           </div>
-          <div data-aos="zoom-in-up" class="grid-item">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-offset="300"
+            class="section__grid__item"
+          >
             <img
               src="./multimedia/csgo-5.webp"
               alt="Imagenes que representan logros de 9z team"
-              class="grid-image"
+              class="section__grid__item__image"
               loading="lazy"
             />
           </div>
-          <div data-aos="zoom-in-up" class="grid-item">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-offset="300"
+            class="section__grid__item"
+          >
             <img
               src="./multimedia/csgo-6.webp"
               alt="Imagenes que representan logros de 9z team"
-              class="grid-image"
+              class="section__grid__item__image"
               loading="lazy"
             />
           </div>
-        </div>
       </section>
     </main>
 
-    <footer
-      class="footer"
-      data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom"
-    >
-      <p class="copyright">
+    <footer class="footer">
+      <p class="footer__copyright">
         © 9z team Pagina hecha por un fan sin fines de lucro
       </p>
-      <div class="container-icons">
+      <div class="footer__icons">
         <a href="https://www.youtube.com/@9zTeam" aria-label="Youtube"
-          ><i class="fa-brands fa-youtube icon"></i
+          ><i class="fa-brands fa-youtube footer__icons__icon"></i
         ></a>
 
         <a href="https://twitter.com/9zTeam" aria-label="Twitter"
-          ><i class="fa-brands fa-twitter icon"></i
+          ><i class="fa-brands fa-twitter footer__icons__icon"></i
         ></a>
 
         <a href="https://www.instagram.com/9zteam" aria-label="Instagram">
-          <i class="fa-brands fa-instagram icon"></i
+          <i class="fa-brands fa-instagram footer__icons__icon"></i
         ></a>
       </div>
     </footer>
