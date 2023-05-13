@@ -9,7 +9,7 @@
 
   &__copyright {
     @include text($text__color__default, 1em, center);
-    padding: 4px 8px;
+    padding: 1em 0;
     margin: 0;
   }
 
@@ -20,6 +20,21 @@
     &__icon {
       @include text($text__color__default, 28px);
       padding: 0 20px;
+    }
+
+    .youtube:active {
+      color: #FF0000;
+      transition: color .3s;
+    }
+
+    .twitter:active {
+      color: #4fb0ff;
+      transition: color .3s;
+    }
+
+    .instagram:active {
+      color: #E1306C;
+      transition: color .3s;
     }
   }
 }

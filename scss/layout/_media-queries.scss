@@ -1,4 +1,9 @@
 @media screen and (min-width: 992px) {
+  // Estilos NavBar
+  .nav-item {
+    padding: 0;
+  }
+
   // Estilos para el index
 
   .section__grid {
@@ -22,7 +27,7 @@
     font-size: 24px;
   }
 
-  //Estilos para Roster
+  //Estilos para Equipo
 
   .teams {
     @include sizing(100%, 300px);
@@ -48,7 +53,7 @@
   }
 
   .section__team {
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2, 520px);
     justify-content: space-around;
     gap: 32px;
 
@@ -208,6 +213,21 @@
 
     &__copyright {
       font-size: 20px;
+    }
+
+    .youtube:hover {
+      color: #ff0000;
+      transition: color 0.3s;
+    }
+
+    .twitter:hover {
+      color: #4fb0ff;
+      transition: color 0.3s;
+    }
+
+    .instagram:hover {
+      color: #e1306c;
+      transition: color 0.3s;
     }
   }
 }
