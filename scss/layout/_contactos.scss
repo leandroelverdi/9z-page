@@ -75,6 +75,11 @@
         border: 1px solid $border__color__default;
         border-radius: 6px;
         color: #fff;
+
+        &:active {
+          border-color: #ffffff66;
+          color: #ffffff66;
+        }
       }
     }
   }
@@ -122,6 +127,11 @@
         color: #fff;
         border-radius: 6px;
         padding: 6px 0;
+
+        &:active {
+          border-color: #ffffff66;
+          color: #ffffff66;
+        }
       }
     }
   }

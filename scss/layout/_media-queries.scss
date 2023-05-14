@@ -45,6 +45,11 @@
       font-size: 28px;
       padding: 4px 16px;
       border-radius: 8px;
+
+      &:hover {
+        border-color: #ffffff66;
+        color: #ffffff66;
+      }
     }
   }
 
@@ -53,17 +58,17 @@
   }
 
   .section__team {
-    grid-template-columns: repeat(2, 520px);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-around;
     gap: 32px;
 
     .section__team__card {
-      @include flex(flex-start, center);
+      @include flex(space-between, center);
       @include sizing(100%, auto);
 
       &__header {
         @include flex(space-between, flex-start, column-reverse);
-        @include sizing(100%, 280px);
+        @include sizing(max-content, 280px);
       }
     }
   }
@@ -88,6 +93,11 @@
 
         &__btn {
           align-self: flex-end;
+
+          &:hover {
+            border-color: #ffffff66;
+            color: #ffffff66;
+          }
         }
       }
     }
@@ -127,6 +137,11 @@
 
       &__containerSubmit {
         width: 20%;
+
+        &__btn:hover {
+          border-color: #ffffff66;
+          color: #ffffff66;
+        }
       }
     }
   }
@@ -173,6 +188,11 @@
           border: 1px solid $border__color__default;
           border-radius: 6px;
           color: $text__color__default;
+
+          &:hover {
+            border-color: #ffffff66;
+            color: #ffffff66;
+          }
         }
       }
     }
@@ -237,5 +257,9 @@
     &__image {
       width: 480px;
     }
+  }
+
+  .section__team {
+    grid-template-columns: repeat(2, 500px);
   }
 }
