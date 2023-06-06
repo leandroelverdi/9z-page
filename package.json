@@ -1,20 +1,19 @@
 {
-  "name": "52140-leandro-elverdi",
+  "name": "52140-proyectofinal-web",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leandroelverdi/PreEntrega2-Elverdi-52140.git"
+    "url": "git+https://github.com/leandroelverdi/ProyectoFinal-Elverdi-52140.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/leandroelverdi/PreEntrega2-Elverdi-52140/issues"
+    "url": "https://github.com/leandroelverdi/ProyectoFinal-Elverdi-52140/issues"
   },
-  "homepage": "https://github.com/leandroelverdi/PreEntrega2-Elverdi-52140#readme",
-  "keywords": [],
-  "description": ""
+  "homepage": "https://github.com/leandroelverdi/ProyectoFinal-Elverdi-52140#readme"
 }
