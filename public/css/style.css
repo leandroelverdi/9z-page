@@ -808,6 +808,7 @@
   }
 }
 .background {
+  width: 100%;
   background: linear-gradient(140deg, rgba(105, 0, 182, 0.7058823529) 0%, rgba(194, 29, 253, 0.6941176471) 40%, #f85783 100%);
 }
 
